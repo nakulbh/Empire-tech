@@ -1,0 +1,81 @@
+.main{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 90px;
+  }
+.card {
+    width: 310px;
+    height: 254px;
+    /* background-image: linear-gradient(144deg,#8608b4, #492fed 60%,#bd6fda); */
+    background-color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+    border: none;
+    border-radius: 10px;
+    padding-top: 10px;
+    position: relative;
+    margin: auto;
+    font-family: inherit;
+
+    text-align: center;
+  }
+
+  .card span {
+    font-weight: 600;
+    /* color: white; */
+    color: black;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-size: 1.3em;
+  }
+  
+  .card .job {
+    font-weight: 400;
+    /* color: white; */
+    color: black;
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 1em;
+    padding-left: -10px;
+  }
+  
+.img {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+ color: black;
+ margin-bottom: 20px;
+  }
+  
+  .card button {
+    padding: 8px 25px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+    background: transparent;
+    /* color: #fff; */
+    color: black;
+    font-weight: 600;
+  }
+  
+  .card button:hover {
+    background: transparent;
+    color: #000;
+  }
+
+/* Apply styles for screens with a maximum width of 805px */
+@media (max-width: 805px) {
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+  .card{
+    margin-top: 40px;
+  }
+
+}

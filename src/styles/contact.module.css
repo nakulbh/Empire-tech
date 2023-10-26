@@ -1,0 +1,140 @@
+/* Contact.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; /* Center vertically in the viewport */
+    text-align: center;
+    margin-left: 100px;
+    /* margin-top: 100px; */
+  }
+
+  
+/* ContactForm.css */
+.contact_form {
+  font-size: 20px;
+  text-align: center;
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid rgb(223, 174, 174);
+  border-radius: 5px;
+  /* background-color: antiquewhite; */
+}
+
+.label {
+  width: 100%;
+  color: black;
+  display: block;
+  margin-bottom: 5px;
+  /* border: 2px solid black; */
+}
+
+.input_field {
+  border: 1px solid rgb(223, 174, 174);
+  width: 100%;
+  padding: 1px;
+  margin-bottom: 10px;
+}
+
+.textarea {
+  border: 1px solid rgb(223, 174, 174);
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.submit_button {
+  background-color: #007bff;
+  color: #191111;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.left iframe{
+  border-radius: 10px;
+height: 400px;
+ width:500px;
+}
+  
+  .image{
+    overflow: hidden;
+    /* width: 100vw; */
+    height: 300px;
+
+}
+
+.bottom{
+  margin: 100px;
+  margin-top: 100px;
+  display: flex;
+}
+.left{
+  border-radius: 20px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.Heading{
+  color: black;
+  text-align: center;
+  font-size: 50px;
+}
+@media (max-width: 1226px) {
+  .bottom{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .left{
+    display: flex;
+    justify-content: center;
+
+  }
+  .left iframe{
+    margin: auto;
+    /* width:100% ; */
+    height: 400px;
+ width:500px;
+    /* margin-left: 120px; */
+  }
+  
+  .right{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+}
+@media (max-width: 805px) {
+  .bottom{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .left{
+    display: flex;
+    justify-content: center;
+
+  }
+  .left iframe{
+    margin: auto;
+    width:100% ;
+    /* margin-left: 120px; */
+  }
+  
+  .right{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+}
+.sucess{
+  color: green;
+}
+

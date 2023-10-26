@@ -1,0 +1,52 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 12px;
+    gap: 8px;
+    height: 45px;
+    width: 150px;
+    border: none;
+    background: rgb(74, 180, 50);
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .label{
+    line-height: 22px;
+    font-size: 15px;
+    color: #fff;
+    margin-left: 21px;
+    padding-left: 20px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  .button .span {
+    border-radius: 50%;
+    background-color: rgb(48, 129, 29);
+    padding: 10px;
+    position: absolute;
+    left: 0;
+  }
+  
+  .button:hover {
+    background: rgb(48, 129, 29);
+  }
+  
+  .button:hover .svg-icon {
+    animation: slope 0.8s linear infinite;
+  }
+  
+  @keyframes slope {
+    0% {
+    }
+  
+    50% {
+      transform: rotate(15deg);
+    }
+  
+    100% {
+    }
+  }
