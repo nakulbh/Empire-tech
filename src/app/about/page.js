@@ -2,6 +2,7 @@
 import React from "react";
 import styles from "@/styles/about.module.css"
 import Cardclient from "@/components/aboutCard";
+import Wepage from "@/components/weprovide";
 
 const page = () => {
   return (
@@ -19,7 +20,8 @@ const page = () => {
       <h1>WHO WE ARE</h1>
       <p>Empire technology Web Services is a company committed to providing world-class services that accelerate the growth and success of their clients. Here at Empires tech we are committed to providing effective solutions with our diverse range of services including Software Development, Payment Gateway Solutions, Web Design And Development, Digital Marketing, Search Engine Optimization,  and Android Apps. The company creates an environment for its employees, a team of experts across various fields who utilize their expertise and vast domain knowledge to accelerate the growth and success of their clients, and who have enough space to work independently.</p>
     </div>
-    <hr />
+  
+    <Wepage></Wepage>
 
 
     <div className={styles.cards}>

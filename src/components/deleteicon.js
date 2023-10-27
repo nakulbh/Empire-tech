@@ -1,12 +1,28 @@
+"use client"
 import React from 'react'
 import DeleteIcon from '@mui/icons-material/Delete';
 
-const Deleteicon = (params) => {
+const Deleteicon = ({id}) => {
+
+const removeTopic= async () =>{
+  const confirmed = confirm("Are you sure?")
+  if (confirmed) {
+    console.log("Delete");
+    await fetch(`http://localhost:3000/api/users/contact?id=${id}`,{
+      method: "DELETE",
+    })
+  }
+
+
+}
+
+
   return (
     <div>
-    {/* {params.id} */}
+   
+    <button onClick={removeTopic}>
       <DeleteIcon></DeleteIcon>
-      heloo
+    </button>
     </div>
   )
 }

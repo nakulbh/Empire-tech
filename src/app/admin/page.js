@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import styles from "@/styles/admin.module.css"
+import styles from "@/styles/admin.module.css";
 import Deleteicon from '@/components/deleteicon';
 
 const getData = async () => {
@@ -18,7 +18,6 @@ const getData = async () => {
   }
 };
 
-
 const Page = () => {
   const [topics, setTopics] = useState([]);
   const [serialNumbers, setSerialNumbers] = useState([]);
@@ -26,7 +25,7 @@ const Page = () => {
   useEffect(() => {
     const fetchTopics = async () => {
       const data = await getData();
-      setTopics(data.topics);
+      setTopics(data.topics.reverse()); // Reverse the array
     };
 
     fetchTopics();
@@ -53,7 +52,7 @@ const Page = () => {
         </thead>
         <tbody>
           {topics.map((t, index) => (
-            <tr>
+            <tr key={t._id}>
               <td className={styles.td}>{serialNumbers[index]}</td>
               <td className={styles.td}>{t.username}</td>
               <td className={styles.td}>{t.email}</td>

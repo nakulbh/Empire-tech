@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from "@/styles/home.module.css"
-import  Button  from '@/components/homeButton'
-import ContactSection from '@/components/contactSectionHome';
-import Component from '@/components/vineet';
-import Ppp from '@/components/ppp';
+import  Button  from '@/components/HomeButton'
+import ContactSection from '@/components/ContactSectionHome';
+import Component from '@/components/Vineet';
+import Ppp from '@/components/Ppp';
 import Link from 'next/link';
 
 
@@ -18,7 +18,7 @@ function Home() {
 <Button></Button>
 </Link>
 
-<button class={styles.primary_button}>
+<button className={styles.primary_button}>
   About us
 </button>
 </div>

@@ -3,7 +3,7 @@ import styles from "@/styles/priceCard.module.css"
 
 const Pricecard = (params) => {
   return (
-    <div>
+    <div className="transition-opacity duration-500 ease-in-out hover:opacity-90">
          <div className={styles.card}>
     <div className={styles.content}>
       <div className={styles.title}>{params.service}</div>
