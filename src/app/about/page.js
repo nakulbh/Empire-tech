@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from 'react';
 import Image from 'next/image'; // Import Image from next/image
-import styles from "@/styles/about.module.css";
-import Cardclient from "@/components/aboutCard";
+import styles from '@/styles/contact.module.css';
+import Cardclient from '@/components/contactCard';
 
-const Page = () => { // Renamed the function to start with an uppercase letter
+const Page = () => {
+  // Use useState within the functional component
+  const [state, setState] = useState(initialValue);
+
   return (
     <div className={styles.maincard}>
       <div className={styles.image}>
-        <Image // Use Image component for image optimization
+        <Image
           src="https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg"
           alt="about"
           width={500} // Adjust width and height as needed
